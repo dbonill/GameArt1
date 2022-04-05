@@ -23,7 +23,7 @@ public class ECMovement : MonoBehaviour
     public float timerEndToWalk = 5f;
     private float walking = 0f;
     private bool startWalk = false;
-    private float walkForXTime = 1f;
+    public float walkForXTime = 1f;
     private float ImWalkingHere = 0f;
 
     //walk away from player maybe

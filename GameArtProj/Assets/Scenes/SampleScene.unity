@@ -241,6 +241,7 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  dirX: 0
   moveSpeed: 10000
   jumpForce: 3000
   timerStartToWalk: 1
@@ -248,7 +249,6 @@ MonoBehaviour:
   walkForXTime: 1
   runAway: 0
   dist2Player: 5
-  canJump: 0
   timerStartToJump: 1
   timerEndToJump: 5
 --- !u!212 &370342090
