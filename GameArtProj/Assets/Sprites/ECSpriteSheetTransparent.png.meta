@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 2df6a2ab6037bb245a9df946b29018e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2540726061562018099
+    second: ECSpriteSheetTransparent_0
+  - first:
+      213: -5232384086357599066
+    second: ECSpriteSheetTransparent_1
+  - first:
+      213: 3230398930248986715
+    second: ECSpriteSheetTransparent_2
+  - first:
+      213: 6579898234574085378
+    second: ECSpriteSheetTransparent_3
+  - first:
+      213: 9006184702875374712
+    second: ECSpriteSheetTransparent_4
+  - first:
+      213: -5179321254022894729
+    second: ECSpriteSheetTransparent_5
+  - first:
+      213: 2379298188083085774
+    second: ECSpriteSheetTransparent_6
+  - first:
+      213: -4876109958907521921
+    second: ECSpriteSheetTransparent_7
+  - first:
+      213: -675463974636996758
+    second: ECSpriteSheetTransparent_8
+  - first:
+      213: 8015247386877364121
+    second: ECSpriteSheetTransparent_9
+  - first:
+      213: -4054070495147506866
+    second: ECSpriteSheetTransparent_10
+  - first:
+      213: 3420753714877709866
+    second: ECSpriteSheetTransparent_11
+  - first:
+      213: -3360387755239312269
+    second: ECSpriteSheetTransparent_12
+  - first:
+      213: -8965865517008551703
+    second: ECSpriteSheetTransparent_13
+  - first:
+      213: -8572900211345939425
+    second: ECSpriteSheetTransparent_14
+  - first:
+      213: 7177541443168928465
+    second: ECSpriteSheetTransparent_15
+  - first:
+      213: 4330205165941664544
+    second: ECSpriteSheetTransparent_16
+  - first:
+      213: -6996683416868574283
+    second: ECSpriteSheetTransparent_17
+  - first:
+      213: 3231737667562211912
+    second: ECSpriteSheetTransparent_18
+  - first:
+      213: -9082410829331129690
+    second: ECSpriteSheetTransparent_19
+  - first:
+      213: 6947210342551833546
+    second: ECSpriteSheetTransparent_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 710
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6c40dbb178dbcd0800000000000000
+      internalID: -2540726061562018099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 709
+        width: 116
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac9f345566d267b0800000000000000
+      internalID: -5232384086357599066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 709
+        width: 116
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50fa4036bea4dc20800000000000000
+      internalID: 3230398930248986715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 709
+        width: 116
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d1202259e705b50800000000000000
+      internalID: 6579898234574085378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_4
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 710
+        width: 116
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874917c35456cfc70800000000000000
+      internalID: 9006184702875374712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_5
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 709
+        width: 116
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ba55cb2ca5f18b0800000000000000
+      internalID: -5179321254022894729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_6
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 707
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec14c639817f40120800000000000000
+      internalID: 2379298188083085774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 481
+        width: 89
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74929db3d3945cb0800000000000000
+      internalID: -4876109958907521921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 479
+        width: 86
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a673035081540a6f0800000000000000
+      internalID: -675463974636996758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 481
+        width: 74
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99704b12801eb3f60800000000000000
+      internalID: 8015247386877364121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_10
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 482
+        width: 79
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4347523d5c0db7c0800000000000000
+      internalID: -4054070495147506866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 485
+        width: 91
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e32673165f87f20800000000000000
+      internalID: 3420753714877709866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_12
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 487
+        width: 86
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374736504218d51d0800000000000000
+      internalID: -3360387755239312269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_13
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 483
+        width: 76
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e008c2c0d8d29380800000000000000
+      internalID: -8965865517008551703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_14
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 482
+        width: 83
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14aadfcda0f60980800000000000000
+      internalID: -8572900211345939425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 211
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d28ab01aefbb9360800000000000000
+      internalID: 7177541443168928465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_16
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 209
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ba380f7aaf71c30800000000000000
+      internalID: 4330205165941664544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_17
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 254
+        width: 155
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbaeab9089c6ee90800000000000000
+      internalID: -6996683416868574283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_18
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 296
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a8b42494079dc20800000000000000
+      internalID: 3231737667562211912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_19
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 263
+        width: 155
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa9e8da87bc4f180800000000000000
+      internalID: -9082410829331129690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ECSpriteSheetTransparent_20
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 213
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbc8b7aff2796060800000000000000
+      internalID: 6947210342551833546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

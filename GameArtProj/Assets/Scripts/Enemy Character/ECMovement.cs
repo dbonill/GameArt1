@@ -64,6 +64,11 @@ public class ECMovement : MonoBehaviour
     void HorizontalMovement()
     {
         anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+        if (dirX == -1)
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        else if (dirX == 1)
+            transform.localScale = new Vector3(1f, 1f, 1f);
+
         if (dirX > 0 && startWalk)
             rb.AddForce(Vector2.right * moveSpeed);
         else if (dirX < 0 && startWalk)

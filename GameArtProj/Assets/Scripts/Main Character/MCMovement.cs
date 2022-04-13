@@ -34,6 +34,11 @@ public class MCMovement : MonoBehaviour
     void HorizontalMovement()
     {
         dirX = Input.GetAxisRaw("Horizontal");
+        if(dirX == -1)
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        else if(dirX == 1)
+            transform.localScale = new Vector3(1f, 1f, 1f);
+
         anim.SetFloat("speed", Mathf.Abs(dirX));
         if (dirX > 0)
             rb.AddForce(Vector2.right * moveSpeed);
