@@ -60,19 +60,22 @@ public class ECMovement : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+
+    void HorizontalMovement()
     {
-        //simple AI
+        anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
         if (dirX > 0 && startWalk)
             rb.AddForce(Vector2.right * moveSpeed);
         else if (dirX < 0 && startWalk)
             rb.AddForce(Vector2.left * moveSpeed);
-        //rb.AddForce(new Vector2(dirX * moveSpeed, rb.velocity.y));
-        //rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
     }
 
-    // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
+    {
+        HorizontalMovement();
+    }
+
+    void walkingLogic()
     {
         if (walking <= 0)
         {
@@ -85,9 +88,6 @@ public class ECMovement : MonoBehaviour
                     dirX = 1f;
             }
             startWalk = true;
-
-
-
             if (ImWalkingHere <= 0)
             {
                 //startWalk = false;
@@ -102,63 +102,57 @@ public class ECMovement : MonoBehaviour
         {
             walking -= Time.deltaTime;
         }
+    }
 
+    void jumpingLogic()
+    {
         if (jumpTimer <= 0 && startJump == false)
         {
             startJump = true;
             jumpTimer = Random.Range(timerStartToJump, timerEndToJump);
-            
+
         }
         else
         {
             jumpTimer -= Time.deltaTime;
         }
 
-
         if (startJump && IsGrounded())
         {
             startJump = false;
-            //jumpSoundEffect.Play();
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            //rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
         }
-
-        //UpdateAnimationState();
     }
 
-    /*
-    private void UpdateAnimationState()
+    void updateAnimValues()
     {
-        MovementState state;
-
-        if (dirX > 0f)
+        anim.SetBool("grounded", IsGrounded());
+        if (rb.velocity.y > 0 && !IsGrounded())
         {
-            state = MovementState.running;
-            sprite.flipX = false;
+            anim.SetBool("Jumping", true);
+            anim.SetBool("Falling", false);
         }
-        else if (dirX < 0f)
+        else if (rb.velocity.y < 0 && !IsGrounded())
         {
-            state = MovementState.running;
-            sprite.flipX = true;
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", true);
         }
         else
         {
-            state = MovementState.idle;
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", false);
         }
 
-        if (rb.velocity.y > .1f)
-        {
-            state = MovementState.jumping;
-        }
-        else if (rb.velocity.y < -.1f)
-        {
-            state = MovementState.falling;
-        }
-
-        anim.SetInteger("state", (int)state);
     }
-    */
+
+
+    // Update is called once per frame
+    private void Update()
+    {
+        walkingLogic();
+        jumpingLogic();
+        updateAnimValues();
+    }
 
     private bool IsGrounded()
     {

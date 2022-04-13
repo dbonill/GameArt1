@@ -17,7 +17,10 @@ public class MCMovement : MonoBehaviour
 
     private enum MovementState { idle, running, jumping, falling }
 
-    //[SerializeField] private AudioSource jumpSoundEffect;
+    private void Awake()
+    {
+        anim = this.GetComponent<Animator>();
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -28,63 +31,51 @@ public class MCMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void FixedUpdate()
+    void HorizontalMovement()
     {
         dirX = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("speed", Mathf.Abs(dirX));
         if (dirX > 0)
             rb.AddForce(Vector2.right * moveSpeed);
         else if (dirX < 0)
             rb.AddForce(Vector2.left * moveSpeed);
-        //rb.AddForce(new Vector2(dirX * moveSpeed, rb.velocity.y));
-        //rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+    }
+
+    private void FixedUpdate()
+    {
+        HorizontalMovement();
+    }
+
+    void updateAnimValues()
+    {
+        anim.SetBool("grounded", IsGrounded());
+        if (rb.velocity.y > 0 && !IsGrounded())
+        {
+            anim.SetBool("Jumping", true);
+            anim.SetBool("Falling", false);
+        }
+        else if (rb.velocity.y < 0 && !IsGrounded())
+        {
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", true);
+        }
+        else
+        {
+            anim.SetBool("Jumping", false);
+            anim.SetBool("Falling", false);
+        }
     }
 
     // Update is called once per frame
     private void Update()
     {
+        //Debug.Log(rb.velocity.y + " CURRENT Y VELOCITY MAIN CHARACTER");
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            //jumpSoundEffect.Play();
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            //rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
         }
-
-        //UpdateAnimationState();
+        updateAnimValues();
     }
-
-    /*
-    private void UpdateAnimationState()
-    {
-        MovementState state;
-
-        if (dirX > 0f)
-        {
-            state = MovementState.running;
-            sprite.flipX = false;
-        }
-        else if (dirX < 0f)
-        {
-            state = MovementState.running;
-            sprite.flipX = true;
-        }
-        else
-        {
-            state = MovementState.idle;
-        }
-
-        if (rb.velocity.y > .1f)
-        {
-            state = MovementState.jumping;
-        }
-        else if (rb.velocity.y < -.1f)
-        {
-            state = MovementState.falling;
-        }
-
-        anim.SetInteger("state", (int)state);
-    }
-    */
 
     private bool IsGrounded()
     {
