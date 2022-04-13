@@ -246,7 +246,7 @@ MonoBehaviour:
   moveSpeed: 10000
   jumpForce: 3000
   timerStartToWalk: 1
-  timerEndToWalk: 5
+  timerEndToWalk: 3
   walkForXTime: 1
   runAway: 0
   dist2Player: 5
