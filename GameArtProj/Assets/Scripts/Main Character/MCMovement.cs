@@ -48,7 +48,8 @@ public class MCMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        HorizontalMovement();
+        if(!GameCommands.ControlEnemy)
+            HorizontalMovement();
     }
 
     void updateAnimValues()
@@ -75,7 +76,7 @@ public class MCMovement : MonoBehaviour
     private void Update()
     {
         //Debug.Log(rb.velocity.y + " CURRENT Y VELOCITY MAIN CHARACTER");
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded() && !GameCommands.ControlEnemy)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }

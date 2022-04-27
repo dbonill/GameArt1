@@ -10,6 +10,7 @@ public class GameCommands : MonoBehaviour
     public static bool GodMode = true;
     public static bool StopSwordSpawns = false;
     public static bool StopEnemySpawns = false;
+    public static bool ControlEnemy = false;
 
     public Text godmodeT;
     public Text swordspawnsT;
@@ -84,6 +85,15 @@ public class GameCommands : MonoBehaviour
             updateText();
 
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift)) //control EC
+        {
+            if (ControlEnemy)
+                ControlEnemy = false;
+            else
+                ControlEnemy = true;
+
+        }
+
 
 
         if (player == null)

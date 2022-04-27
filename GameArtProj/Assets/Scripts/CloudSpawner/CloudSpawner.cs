@@ -27,7 +27,7 @@ public class CloudSpawner : MonoBehaviour
             cloud.transform.localScale = new Vector3(cloud.transform.localScale.x * -1, cloud.transform.localScale.y, cloud.transform.localScale.z);
         }
 
-        cloud.transform.parent = UIParent;
+        cloud.transform.SetParent(UIParent);
 
         float nextTimeToSpawnCloud = Random.Range(spawnIntervalStart, spawnIntervalEnd);
         Invoke("spawnCloud", nextTimeToSpawnCloud);
