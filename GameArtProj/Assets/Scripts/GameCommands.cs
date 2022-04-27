@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameCommands : MonoBehaviour
 {
-
+    public static bool ControlEnemy = false;
     // Update is called once per frame
     void Update()
     {
@@ -19,6 +19,15 @@ public class GameCommands : MonoBehaviour
                 Time.timeScale = 0;
             else
                 Time.timeScale = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift)) //control EC
+        {
+            if (ControlEnemy)
+                ControlEnemy = false;
+            else
+                ControlEnemy = true;
+
         }
 
     }
