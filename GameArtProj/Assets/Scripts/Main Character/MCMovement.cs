@@ -50,6 +50,8 @@ public class MCMovement : MonoBehaviour
     {
         if(!GameCommands.ControlEnemy)
             HorizontalMovement();
+        else
+            anim.SetFloat("speed", Mathf.Abs(0));
     }
 
     void updateAnimValues()
