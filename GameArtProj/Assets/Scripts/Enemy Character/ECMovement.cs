@@ -151,11 +151,29 @@ public class ECMovement : MonoBehaviour
     }
 
 
+    void controlManager()
+    {
+        if (!GameCommands.ControlEnemy)
+        {
+            walkingLogic();
+            jumpingLogic();
+        }
+        else
+        {
+            dirX = Input.GetAxisRaw("Horizontal");
+            startWalk = true;
+            if (Input.GetButtonDown("Jump") && IsGrounded())
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
+        }
+    }
+
+
     // Update is called once per frame
     private void Update()
     {
-        walkingLogic();
-        jumpingLogic();
+        controlManager();
         updateAnimValues();
     }
 
