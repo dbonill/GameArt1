@@ -8,8 +8,8 @@ public class GameCommands : MonoBehaviour
 {
     public GameObject player;
     public static bool GodMode = true;
-    public static bool StopSwordSpawns = false;
-    public static bool StopEnemySpawns = false;
+    public static bool StopSwordSpawns = true;
+    public static bool StopEnemySpawns = true;
     public static bool ControlEnemy = false;
 
     public Text godmodeT;
@@ -57,6 +57,7 @@ public class GameCommands : MonoBehaviour
                 Time.timeScale = 1;
         }
 
+        /*
         if (Input.GetKeyDown(KeyCode.F))
         {
             //GODMODE
@@ -85,6 +86,7 @@ public class GameCommands : MonoBehaviour
             updateText();
 
         }
+        */
         if (Input.GetKeyDown(KeyCode.LeftShift)) //control EC
         {
             if (ControlEnemy)
@@ -98,7 +100,7 @@ public class GameCommands : MonoBehaviour
 
         if (player == null)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("SampleSceneStatic");
         }
 
     }
