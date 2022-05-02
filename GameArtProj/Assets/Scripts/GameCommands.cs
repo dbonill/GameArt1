@@ -57,7 +57,7 @@ public class GameCommands : MonoBehaviour
                 Time.timeScale = 1;
         }
 
-        /*
+        
         if (Input.GetKeyDown(KeyCode.F))
         {
             //GODMODE
@@ -86,7 +86,7 @@ public class GameCommands : MonoBehaviour
             updateText();
 
         }
-        */
+        
         if (Input.GetKeyDown(KeyCode.LeftShift)) //control EC
         {
             if (ControlEnemy)
@@ -100,7 +100,7 @@ public class GameCommands : MonoBehaviour
 
         if (player == null)
         {
-            SceneManager.LoadScene("SampleSceneStatic");
+            SceneManager.LoadScene("SampleScene");
         }
 
     }
